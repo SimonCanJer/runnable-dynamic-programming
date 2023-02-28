@@ -30,6 +30,5 @@ transfer control to a runner, which is the executor of the whole logics.
 -  The class org.dynamic.poc.StackReverseDynamics demonstrates the approach as solution of the famous task of stack reverse without using any collections.
 - Parallel implementation of this apprach assumes control transfer to an executor service, which launches  generated runs.
 - However this apporach is applicable to model "call and forget", when caller does not need to be informed about completion of recursive stage.
-- The classes   org.dynamic.poc.OptimalTravel,org.dynamic.poc.MappedTreeSearch,org.dynamic.poc.CriticalDependencies provide and example of the  parallel apporach to search in trees and graph. Despite of they implement different algorithms, the general manner is the same: create runnable task, which generates also a runnable task in recursion and transmits stacks to executor.This way we build connected chains of problem decompostion with intermediate results merge
-- 
+- The classes   org.dynamic.poc.OptimalTravel,org.dynamic.poc.MappedTreeSearch,org.dynamic.poc.CriticalDependencies provide an examples of the  parallel apporach to search in trees and graph. Despite of they implement different algorithms, the general manner is the same: create runnable task, which generates also a runnable task in recursion and transmits stacks to executor.This way we build connected chains of problem decompostion with intermediate results merge
   
